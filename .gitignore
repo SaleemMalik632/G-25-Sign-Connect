@@ -2,5 +2,5 @@ preprocess/PoseNormalize_/
 preprocess/Videos Data/
 preprocess/destination/
 preprocess/pose/
-preprocess/Audio and text/
+# preprocess/Audio and text/
 preprocess/mellotron_libritts.pt
