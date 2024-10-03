@@ -1,0 +1,5 @@
+preprocess\\destination\\94pSo75fZrM\\audio\\0000.wav|On 2 July in 2014, Telangana separated from Andhra Pradesh to form a new state.|1
+preprocess\\destination\\94pSo75fZrM\\audio\\0001.wav|The Capital of Telangana is Hyderabad.|1
+preprocess\\destination\\94pSo75fZrM\\audio\\0002.wav|It is India's 29th state.|1
+preprocess\\destination\\94pSo75fZrM\\audio\\0003.wav|The last election was held in Andhra Pradesh.|1
+preprocess\\destination\\94pSo75fZrM\\audio\\0004.wav|After which Telangana separated.|1
