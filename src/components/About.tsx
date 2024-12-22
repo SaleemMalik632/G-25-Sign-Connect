@@ -11,7 +11,7 @@ export const About = () => {
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <img
             src={pilot}
-            alt=""
+            alt="Illustration of SignConnect"
             className="w-[300px] object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
@@ -20,14 +20,10 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                SignConnect
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                SignConnect is an innovative application designed to break down communication barriers for individuals with hearing and speech disabilities. Using AI, it enables seamless sign-to-speech and speech-to-sign translation, helping users connect with the world more easily. Our mission is to empower the disabled community by providing accessible and intuitive tools that make everyday communication more inclusive.
               </p>
             </div>
 

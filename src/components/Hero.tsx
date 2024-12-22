@@ -17,21 +17,15 @@ export const Hero = () => {
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Sign Connect
+              SignConnect
             </span>{" "}
-            {/* landing page */}
+            {/* updated name */}
           </h1>{" "}
-          {/* for{" "} */}
-          {/* <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
-            </span>{" "}
-            developers
-          </h2> */}
+          {/* heading for the project */}
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          An AI application to help thousands of people with hearing disabilities and speech, to communicate with the world.
+          SignConnect is an AI-powered application designed to bridge communication gaps for people with hearing and speech disabilities. It helps translate sign language to speech and vice versa, enabling seamless interaction with the world.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">

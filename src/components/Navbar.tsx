@@ -31,8 +31,8 @@ const routeList: RouteProps[] = [
     label: "Features",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#meeting",  // Hash link to the Meeting section
+    label: "Meeting",   // Updated label
   },
   {
     href: "#pricing",

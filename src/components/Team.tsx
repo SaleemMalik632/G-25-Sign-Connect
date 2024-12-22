@@ -8,6 +8,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import Mustafa from "../assets/Team Images/Mustafa.png";
+import Saleem from "../assets/Team Images/Saleem.png";
+import Abdulmannan from "../assets/Team Images/Abdulmannan.png";
+import Abdurehman from "../assets/Team Images/Abdurehman.png";
 
 interface TeamProps {
   imageUrl: string;
@@ -23,72 +27,51 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQF9x1BL4EOZYQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724423918811?e=1740614400&v=beta&t=hW872HlBXZmzNXFja2yuXTIYslTRxV_XC58E5Kn06KM",
+    name: "Waqas Ali",
+    position: "Supervisor",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
+      { name: "Facebook", url: "https://www.facebook.com/" },
+      { name: "Instagram", url: "https://www.instagram.com/" },
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    imageUrl: Saleem,
+    name: "Saleem Malik",
+    position: "Team Lead",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
+      { name: "Facebook", url: "https://www.facebook.com/" },
+      { name: "Instagram", url: "https://www.instagram.com/" },
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    imageUrl: Mustafa,
+    name: "Mustafa Riaz",
+    position: "Full Stack Developer",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/mustafa-riaz-dev/" },
+      { name: "Facebook", url: "https://www.facebook.com/" },
+      { name: "Instagram", url: "https://www.instagram.com/" },
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    imageUrl: Abdulmannan,
+    name: "Abdul Mannan",
+    position: "AI Developer",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
+      { name: "Instagram", url: "https://www.instagram.com/" },
+    ],
+  },
+  {
+    imageUrl: Abdurehman,
+    name: "Abdurehman",
+    position: "Software Tester",
+    socialNetworks: [
+      { name: "Linkedin", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
+      { name: "Facebook", url: "https://www.facebook.com/" },
     ],
   },
 ];
@@ -98,20 +81,15 @@ export const Team = () => {
     switch (iconName) {
       case "Linkedin":
         return <Linkedin size="20" />;
-
       case "Facebook":
         return <Facebook size="20" />;
-
       case "Instagram":
         return <Instagram size="20" />;
     }
   };
 
   return (
-    <section
-      id="team"
-      className="container py-24 sm:py-32"
-    >
+    <section id="team" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Our Dedicated{" "}
@@ -120,8 +98,7 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Meet the passionate team behind SignConnect! Our team is committed to providing innovative solutions for seamless communication for people with hearing and speech disabilities.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
@@ -144,7 +121,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>{name} is a dedicated member of our team, bringing expertise in {position.toLowerCase()} to make SignConnect a revolutionary platform for accessibility.</p>
               </CardContent>
 
               <CardFooter>
