@@ -6,9 +6,18 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
   const navigate = useNavigate();
+  const userName = localStorage.getItem("userName"); // Get userName from localStorage
 
+  // Handle login/logout behavior
   const handleGetStarted = () => {
-    navigate("/getstarted");
+    if (userName) {
+      // If the user is logged in, handle logout
+      localStorage.removeItem("userName");
+      navigate("/"); // Optionally navigate to the home page after logout
+    } else {
+      // If the user is not logged in, navigate to the login page
+      navigate("/getstarted");
+    }
   };
 
   return (
@@ -28,23 +37,44 @@ export const Hero = () => {
           SignConnect is an AI-powered application designed to bridge communication gaps for people with hearing and speech disabilities. It helps translate sign language to speech and vice versa, enabling seamless interaction with the world.
         </p>
 
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3" onClick={handleGetStarted}>
-            Get Started
-          </Button>
-
-          <a
-            rel="noreferrer noopener"
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
-          >
-            Github Repository
-            <GitHubLogoIcon className="ml-2 w-5 h-5" />
-          </a>
-        </div>
+        {/* Conditionally render the welcome message and buttons */}
+        {userName ? (
+          <div className="space-y-4 md:space-y-0 md:space-x-4">
+            {/* Welcome message only shown if user is logged in */}
+            <Button className="w-full md:w-1/3" onClick={handleGetStarted}>
+              Logout
+            </Button>
+            <a
+              rel="noreferrer noopener"
+              href="https://github.com/alanjeremiah/WLASL-Recognition-and-Translation"
+              target="_blank"
+              className={`w-full md:w-1/3 ${buttonVariants({
+                variant: "outline",
+              })}`}
+            >
+              Github Repository
+              <GitHubLogoIcon className="ml-2 w-5 h-5" />
+            </a>
+          </div>
+        ) : (
+          <div className="space-y-4 md:space-y-0 md:space-x-4">
+            {/* Show Login button if no user is logged in */}
+            <Button className="w-full md:w-1/3" onClick={handleGetStarted}>
+              Login
+            </Button>
+            <a
+              rel="noreferrer noopener"
+              href="https://github.com/alanjeremiah/WLASL-Recognition-and-Translation"
+              target="_blank"
+              className={`w-full md:w-1/3 ${buttonVariants({
+                variant: "outline",
+              })}`}
+            >
+              Github Repository
+              <GitHubLogoIcon className="ml-2 w-5 h-5" />
+            </a>
+          </div>
+        )}
       </div>
 
       {/* Hero cards sections */}

@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+// import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -39,12 +39,8 @@ export const HeroCards = () => {
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
-          <img
-            src="https://i.pravatar.cc/150?img=58"
-            alt="user avatar"
-            className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
-          />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+
+          <CardTitle className="text-center">Mustafa Riaz</CardTitle>
           <CardDescription className="font-normal text-primary">
             Frontend Developer
           </CardDescription>
@@ -52,8 +48,7 @@ export const HeroCards = () => {
 
         <CardContent className="text-center pb-2">
           <p>
-            I really enjoy transforming ideas into functional software that
-            exceeds expectations
+            Mustafa is a frontend developer who loves building beautiful and accessible user interfaces.
           </p>
         </CardContent>
 
@@ -162,8 +157,7 @@ export const HeroCards = () => {
           <div>
             <CardTitle>Light & dark mode</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+              SignConnect supports light and dark mode, making it easy to use in any environment.
             </CardDescription>
           </div>
         </CardHeader>

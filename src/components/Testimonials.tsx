@@ -1,30 +1,30 @@
 import { useState } from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+// import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import {
   Card,
   CardContent,
-  CardDescription,
+  // CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { FaMicrophone, FaMicrophoneSlash, FaVideo, FaVideoSlash } from "react-icons/fa";  // Importing icons
 
 // TestimonialProps and sample testimonials as before
-interface TestimonialProps {
-  image: string;
-  name: string;
-  userName: string;
-  comment: string;
-}
+// interface TestimonialProps {
+//   image: string;
+//   name: string;
+//   userName: string;
+//   comment: string;
+// }
 
-const testimonials: TestimonialProps[] = [
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
-  },
-];
+// const testimonials: TestimonialProps[] = [
+//   {
+//     image: "https://github.com/shadcn.png",
+//     name: "John Doe React",
+//     userName: "@john_Doe",
+//     comment: "This landing page is awesome!",
+//   },
+// ];
 
 export const Testimonials = () => {
   const [meetingCode, setMeetingCode] = useState<string>("");
